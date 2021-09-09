@@ -20,17 +20,10 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	// 设置壁纸
-	"feh", "--bg-scale", "/home/flute/Wallpapers/wallpaper.jpeg", NULL,
-	
-	// 启动st
-	"st", NULL,
-
-	// 启动fcitx
+	// 启动autostarte脚本
+	"sh", "/home/flute/scripts/dwm-autostart.sh", NULL,
+	// 启动输入法
 	"fcitx", NULL,
-
-	// 刷新状态栏
-	"sh", "/home/flute/scripts/dwm-status.sh", NULL,
 	NULL /* terminate */
 };
 
