@@ -20,8 +20,14 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
+	// 启动st
 	"st", NULL,
+
+	// 启动fcitx
 	"fcitx", NULL,
+
+	// 刷新状态栏
+	"sh", "~/scripts/dwm-status/sh", NULL,
 	NULL /* terminate */
 };
 
